@@ -22,6 +22,7 @@ import { ProduccionComponent } from './produccion/produccion.component';
 import { ProductoComponent } from './producto/producto.component';
 import { ProductoxMateriaPrimaComponent } from './productox-materia-prima/productox-materia-prima.component';
 import { MateriaComponent } from './materia/materia.component';
+import { LoginComponent } from './login/login.component';
 
 const appRoutes: Routes = 
 [
@@ -90,7 +91,8 @@ const appRoutes: Routes =
     ProduccionComponent,
     ProductoComponent,
     ProductoxMateriaPrimaComponent,
-    MateriaComponent
+    MateriaComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
