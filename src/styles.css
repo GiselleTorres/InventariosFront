@@ -1,3 +1,15 @@
+@media only screen and (max-width: 600px) {
+  /* Estilos para pantallas pequeñas */
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Estilos para pantallas medianas */
+}
+
+@media only screen and (min-width: 1025px) {
+  /* Estilos para pantallas grandes */
+}
+
 /* Estilos para la página de inicio de sesión */
 :root {
     margin: 0;
