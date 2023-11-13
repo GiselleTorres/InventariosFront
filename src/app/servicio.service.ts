@@ -15,7 +15,7 @@ const httpOptions =
 export class ServicioService 
 {
   
-  private Url: string = 'https://inventariosback.onrender.com/';
+  private Url: string = 'https://inventariosback.onrender.com';
 
   constructor(private http: HttpClient) { }
 
