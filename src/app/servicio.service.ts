@@ -40,7 +40,7 @@ export class ServicioService
   getCatalogos(): Observable<any>
   {
 
-    return this.http.get(this.Url + "/api/catalogo" , httpOptions);
+    return this.http.get(this.Url + "/catalogo" , httpOptions);
    
   }
 
@@ -48,7 +48,7 @@ export class ServicioService
   getListarCatalogoEsp(fil:any): Observable<any>
   {
 
-    return this.http.get(this.Url + "/api/catalogo" + fil , httpOptions);
+    return this.http.get(this.Url + "/catalogo" + fil , httpOptions);
    
   }
 
@@ -56,7 +56,7 @@ export class ServicioService
  // Método mostrar un solo Tipo de documento  
 
   getCatalogo(id:any): Observable<any> {
-  return this.http.get(this.Url + "/api/catalogo"+id , httpOptions);
+  return this.http.get(this.Url + "/catalogo"+id , httpOptions);
 }
   //-------------------------------------------------------------
  // Método para insertar un nuevo Tipo de documento 
@@ -64,7 +64,7 @@ export class ServicioService
  async insertCatalogo(CatalogoD:any): Promise<any> {
   
   return new Promise((resolve, reject) => {
-    this.http.post(this.Url + "/api/catalogo", CatalogoD, httpOptions).toPromise()
+    this.http.post(this.Url + "/catalogo", CatalogoD, httpOptions).toPromise()
   });
 }
 
@@ -74,7 +74,7 @@ export class ServicioService
  async updateCatalogo(cadena:any): Promise<any> {
 
   return new Promise((resolve, reject) => {
-    this.http.put(this.Url + "/api/catalogo", cadena, httpOptions).toPromise()
+    this.http.put(this.Url + "/catalogo", cadena, httpOptions).toPromise()
   });
 }
 //#endregion
